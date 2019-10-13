@@ -16,6 +16,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+$scope.startScanner = function(){ cordova.plugins.barcodeScanner.scan( function (result) { $scope.$apply(function(){ $scope.barcode = { 'result': result.text, 'format': result.format, 'cancelled': result.cancelled } var ref = window.open(barcode.result, '_blank'); });
 var app = {
     // Application Constructor
     initialize: function() {
