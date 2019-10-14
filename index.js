@@ -1,21 +1,28 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
+var ref = cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=yes');
+//The first parameter is the site you want to go to.
+//The second parameter can be one of 3 options: _self, _blank, _system
+//_self uses Cordova Webview if URL is "good" (whitelist), otherwise uses InAppBroswer.
+//_blank uses InAppBrowser and _system uses's phone's browser
+//The third parameter is a string of options - different options for Android and IOS. Both support the location option.
+
+    onDeviceReady: function() {
+        app.amendLinks('external-link');
+    },
+
+    // Find everything with class className and open it
+    // with the InAppBrowser
+    amendLinks: function(className) {
+        var n = 0,
+            links = document.getElementsByClassName(className);
+
+        for (; n < links.length; n++) {
+            links[n].onclick = function(e) {
+                e.preventDefault();
+                window.open(''.concat(this.href), '_blank');
+            }
+        }
+    }
+};
 
 
 var app = {
