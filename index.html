@@ -1,675 +1,490 @@
 <!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
 
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-
+<html>
 
 <head>
     <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-    <!-- Good default declaration:
-    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-        * Enable inline JS: add 'unsafe-inline' to default-src
-        * Enable eval(): add 'unsafe-eval' to default-src
-    * Create your own at http://cspisawesome.com
-    -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <title>Audrey Love</title>
+    <title>Hello World</title>
+	<style>
+		table { 
+    table-layout:fixed;
+}
+		
+		td { 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+}
+		
+		@media only screen and (max-width: 480px) {
+    /* horizontal scrollbar for tables if mobile screen */
+    .tablemobile {
+        overflow-x: auto;
+        display: block;
+    }
+}
+		
+		 body { margin:0;padding:0; }
+		
+	</style>
 </head>
 
 <body>
+	<!--
     <div class="app">
-        <h1>Audrey Love</h1>
+	    
+        <h1>PhoneGap</h1>
         <div id="deviceready" class="blink">
-            <!--
             <p class="event listening">Connecting to Device</p>
-           
             <p class="event received">Device is Ready</p>
+        </div>
+    </div>
 -->
-            
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>Assignment 1 - Audrey Love</title>
-    </head>
-    <body>
-        <script type="text/javascript" src="cordova.js"></script>
     
-	<div class="app">
-	
-	<table width=50% border=1px>
+    <table style="width:100%; overflow-x: auto;" border=1px>
 		
 		
-		
+<!-- FIRST BOOK-->		
 <tr>
-		<td>
-			<div align="center" name="center" style="font-family: 'Calibri'">
-<!-- ONE -->
-<!-- BOOK IMAGES -->
-				<img align="center" height="150" width="100" src="https://images-na.ssl-images-amazon.com/images/I/61KNHXmOrvL.jpg">
-			
+	<td>
+	<div align="center" name="center" style="font-family: 'Calibri'">
+		
+				<img target="_blank" align="center" height="150" width="100" src="WildThings.jpg">		
+		
 				<br>
 				
 				<p style="font-size:10px;">
-			https://images-na.ssl-images-amazon.com/images/I/61KNHXmOrvL.jpg
+			https://images-na.ssl-images-amazon.com/images/I/61ulN35aErL._SY452_BO1,204,203,200_.jpg
 			</p>
-		
-		</td>
-		
-		
-
-			
-			
-			
+	</td>
 
 <!--DESCRIPTIONS-->
-
 		<td>
+			<!--FIRST BOOK-->
 			<div name="leftpadding" style="padding-left: 4px; font-family: 'Calibri'">
-				<h3 align="left">The Perks of Being a Wallflower<br>
-				Stephen Chbosky</h3>
+				<h3 align="left">Where the Wild Things Are<br>
+				Maurice Sendak</h3>
+				
+				<p align="left" syle="font-size: 5px;">
+				Where the Wild Things Are is fifty years old! Maurice Sendak's Caldecott Medal-winning picture book has become one of the most highly acclaimed and best-loved children's books of all time.
+				<br>
+				
+				<script>
+				var pic1 = cordova.InAppBrowser.open('https://www.goodreads.com/book/show/19543.Where_the_Wild_Things_Are', '_blank', 'location=yes');
+				var ref = cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=yes');
+					
+				</script>
+					
+				<div style="font-size:10px; padding-bottom:10px;">
+				<a target="_blank" class="external-link" href="https://www.goodreads.com/book/show/19543.Where_the_Wild_Things_Are">https://www.goodreads.com/book/show/19543.Where_the_Wild_Things_Are</a>
+					
+				</div>
+					
+		</div>
+		</td>
+		
+<!--LINKS-->
+		<td>
+			<ul>
+				<li style="font-family: 'Calibri'; color:blue;">https://en.wikipedia.org/wiki/Where_the_Wild_Things_Are</li>
+				
+				<li style="font-family: 'Calibri'; color:blue;">https://www.history.com/this-day-in-history/where-the-wild-things-are-author-maurice-sendak-is-born</li>		
+			</ul>	
+		</td>
+</tr>
+
+
+<!-- SECOND BOOK-->
+<tr>
+	<td>
+	<div align="center" name="center" style="font-family: 'Calibri'">
+				<img target="_blank" align="center" height="150" width="100" src="Harold.jpg">					
+				<br>
+				
+				<p style="font-size:10px;">
+			https://images-na.ssl-images-amazon.com/images/I/510ASFs%2BJ3L._SX258_BO1,204,203,200_.jpg
+			</p>
+	</td>
+
+<!--DESCRIPTIONS-->
+		<td>
+			<!--SECOND BOOK-->
+			<div name="leftpadding" style="padding-left: 4px; font-family: 'Calibri'">
+				<h3 align="left">Harold and the Purple Crayon<br>
+				Crockett Johnson</h3>
+				
+				<p align="left" syle="font-size: 5px;">
+				One evening Harold decides to go for a walk in the moonlight. Armed only with an oversize purple crayon, young Harold draws himself a landscape full of wonder and excitement.
+				<br>
+				
+				<div style="font-size:10px; padding-bottom:10px;">
+				<a href="https://www.scholastic.com/teachers/books/harold-and-the-purple-crayon-by-crockett-johnson/">https://www.scholastic.com/teachers/books/harold-and-the-purple-crayon-by-crockett-johnson/</a>
+					
+				</div>
+					
+		</div>
+		</td>
+		
+<!--LINKS-->
+		<td>
+			<ul>
+				<li style="font-family: 'Calibri'; color:blue;">https://www.goodreads.com/book/show/98573.Harold_and_the_Purple_Crayon</li>
+				
+				<li style="font-family: 'Calibri'; color:blue;">https://en.wikipedia.org/wiki/Harold_and_the_Purple_Crayon</li>		
+			</ul>	
+		</td>
+</tr>
+
+<!-- THIRD BOOK-->
+<tr>
+	<td>
+	<div align="center" name="center" style="font-family: 'Calibri'">
+				<img target="_blank" align="center" height="150" width="100" src="Alice.jpg">	
+		
+				<br>
+				
+				<p style="font-size:10px;">
+			https://images-na.ssl-images-amazon.com/images/I/51bDmmnouCL._SX331_BO1,204,203,200_.jpg
+			</p>
+	</td>
+
+<!--DESCRIPTIONS-->
+		<td>
+			<!--THIRD BOOK-->
+			<div name="leftpadding" style="padding-left: 4px; font-family: 'Calibri'">
+				<h3 align="left">Alice's Adventures in Wonderland<br>
+				Lewis Carroll</h3>
 				
 				<p align="left" syle="font-size: 5px;">
 				Socially awkward teen Charlie (Logan Lerman) is a wallflower, always watching life from the sidelines, until two charismatic students become his mentors. Free-spirited Sam (Emma Watson) and her stepbrother Patrick (Ezra Miller) help Charlie discover the joys of friendship, first love, music and more, while a teacher sparks Charlie's dreams of becoming a writer. However, as his new friends prepare to leave for college, Charlie's inner sadness threatens to shatter his newfound confidence.
 				<br>
 				
 				<div style="font-size:10px; padding-bottom:10px;">
-				<a href="https://www.shmoop.com/perks-of-being-a-wallflower/summary.html">https://www.shmoop.com/perks-of-being-a-wallflower/summary.html</a>
-				
-				
+				<a href="https://www.britannica.com/topic/Alices-Adventures-in-Wonderland">https://www.britannica.com/topic/Alices-Adventures-in-Wonderland</a>
+					
 				</div>
 					
 		</div>
 		</td>
 		
-		
 <!--LINKS-->
 		<td>
-		
 			<ul>
-				<li><a href="https://www.sparknotes.com/lit/the-perks-of-being-a-wallflower/summary/">https://www.sparknotes.com/lit/the-perks-of-being-a-wallflower/summary/</a></li>
-			</ul>
-			
-			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/Stephen_Chbosky">https://en.wikipedia.org/wiki/Stephen_Chbosky</a></li>
-			</ul>
-		
+				<li style="font-family: 'Calibri'; color:blue;">https://www.goodreads.com/book/show/6324090-alice-s-adventures-in-wonderland</li>
+				
+				<li style="font-family: 'Calibri'; color:blue;">https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland</li>		
+			</ul>	
 		</td>
-
 </tr>
 
+<!-- FOURTH BOOK-->
 <tr>
-		<td>
-			<div align="center" name="center" style="font-family: 'Calibri'">
-<!-- TWO -->
-<!-- BOOK IMAGES -->
-				<img align="center" height="150" width="100" src="https://images-na.ssl-images-amazon.com/images/I/61TsY32GYwL.jpg">
-			
-				<br>
+	<td>
+	<div align="center" name="center" style="font-family: 'Calibri'">
+				<img target="_blank" align="center" height="150" width="100" src="Goodnight.jpg">					
+				
+		<br>
 				
 				<p style="font-size:10px;">
-			https://images-na.ssl-images-amazon.com/images/I/61TsY32GYwL.jpg
+			https://images-na.ssl-images-amazon.com/images/I/61ZfoLVFjnL._SX258_BO1,204,203,200_.jpg
 			</p>
-		
-		</td>
-		
-		
-
-			
-			
-			
+	</td>
 
 <!--DESCRIPTIONS-->
-
 		<td>
+			<!--FOURTH BOOK-->
 			<div name="leftpadding" style="padding-left: 4px; font-family: 'Calibri'">
-				<h3 align="left">The Art of Racing in the Rain<br>
-				Garth Stein</h3>
+				<h3 align="left">Goodnight Moon<br>
+				Margaret Wise Brown</h3>
 				
 				<p align="left" syle="font-size: 5px;">
-				
-				The novel follows the story of Denny Swift, a race car driver and customer representative in a Seattle BMW dealership, and his dog, Enzo, who believes in the legend that a dog "who is prepared" will be reincarnated in his next life as a human. Enzo sets out to prepare, with The Seattle Times calling his journey "a struggle to hone his humanness, to make sense of the good, the bad and the unthinkable."
-
-Enzo spends most of his days watching and learning from television, gleaning what he can about his owner's greatest passion, race car driving—and relating it to life. He watches as Denny marries Eve, the birth of their daughter, Zoe, and then Eve's development of brain cancer, which only he can detect through his acute sense of smell. Enzo eventually plays a key role in Denny's child-custody battle with his in-laws and distills his observations of the human condition in the mantra "that which you manifest is before you." Enzo helps Denny throughout his life, through his ups and downs.
-				
+				Goodnight Moon is an American children's book written by Margaret Wise Brown and illustrated by Clement Hurd. It was published on September 3, 1947, and is a highly acclaimed bedtime story.
 				<br>
 				
 				<div style="font-size:10px; padding-bottom:10px;">
-				<a href="https://en.wikipedia.org/wiki/The_Art_of_Racing_in_the_Rain">https://en.wikipedia.org/wiki/The_Art_of_Racing_in_the_Rain</a>
-				
-				
+				<a href="https://www.barnesandnoble.com/w/goodnight-moon-board-margaret-wise-brown/1105127857">https://www.barnesandnoble.com/w/goodnight-moon-board-margaret-wise-brown/1105127857</a>
+					
 				</div>
 					
 		</div>
 		</td>
 		
-		
 <!--LINKS-->
 		<td>
-		
 			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/The_Art_of_Racing_in_the_Rain">https://en.wikipedia.org/wiki/The_Art_of_Racing_in_the_Rain</a></li>
-			</ul>
-			
-			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/Garth_Stein">https://en.wikipedia.org/wiki/Garth_Stein</a></li>
-			</ul>
-		
+				<li style="font-family: 'Calibri'; color:blue;">https://www.goodreads.com/book/show/32929.Goodnight_Moon</li>
+				
+				<li style="font-family: 'Calibri'; color:blue;">https://en.wikipedia.org/wiki/Goodnight_Moon</li>		
+			</ul>	
 		</td>
-
 </tr>
 
+<!-- FIFTH BOOK-->
 <tr>
-		<td>
-			<div align="center" name="center" style="font-family: 'Calibri'">
-<!--THREE-->
-<!-- BOOK IMAGES -->
-				<img align="center" height="150" width="100" src="https://images-na.ssl-images-amazon.com/images/I/71iR7BPeGHL.jpg">
-			
+	<td>
+	<div align="center" name="center" style="font-family: 'Calibri'">
+				<img target="_blank" align="center" height="150" width="100" src="Caterpillar.jpg">					
+				
 				<br>
 				
 				<p style="font-size:10px;">
-			https://images-na.ssl-images-amazon.com/images/I/71iR7BPeGHL.jpg
+			https://images-na.ssl-images-amazon.com/images/I/41I%2BObE%2BG3L._SY355_BO1,204,203,200_.jpg
 			</p>
-		
-		</td>
-		
-		
-
-			
-			
-			
+	</td>
 
 <!--DESCRIPTIONS-->
-
 		<td>
+			<!--FIFTH BOOK-->
 			<div name="leftpadding" style="padding-left: 4px; font-family: 'Calibri'">
-				<h3 align="left">Looking for Alaska<br>
-				John Green</h3>
+				<h3 align="left">The Very Hungry Caterpillar<br>
+				Eric Carle</h3>
 				
 				<p align="left" syle="font-size: 5px;">
-				<!--Description-->
-				
-				Miles Halter is tired of his predictable and friendless life (check out the going-away party for him at the beginning of the book), so he decides to attend Culver Creek boarding school in Alabama for his junior year of high school. He tells his parents that he's going to seek a Great Perhaps, that there's something more for him.
-
-And there is. The story is split in two parts: before and after.
-				
+				The very hungry caterpillar literally eats his way through the pages of the book-and right into your child's heart...
 				<br>
 				
 				<div style="font-size:10px; padding-bottom:10px;">
-				<a href="https://www.shmoop.com/looking-for-alaska/summary.html">https://www.shmoop.com/looking-for-alaska/summary.html</a>
-				
-				
+				<a href="https://www.penguin.com/static/pages/features/hungrycaterpillar/">https://www.penguin.com/static/pages/features/hungrycaterpillar/</a>
+					
 				</div>
 					
 		</div>
 		</td>
 		
-		
 <!--LINKS-->
 		<td>
-		
 			<ul>
-				<li><a href="https://www.shmoop.com/looking-for-alaska/summary.html">https://www.shmoop.com/looking-for-alaska/summary.html</a></li>
-			</ul>
-			
-			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/John_Green_(author)">https://en.wikipedia.org/wiki/John_Green_(author)</a></li>
-			</ul>
-		
+				<li style="font-family: 'Calibri'; color:blue;">https://www.goodreads.com/book/show/4948.The_Very_Hungry_Caterpillar</li>
+				
+				<li style="font-family: 'Calibri'; color:blue;">"https://en.wikipedia.org/wiki/The_Very_Hungry_Caterpillar</li>		
+			</ul>	
 		</td>
-
 </tr>
 
+<!-- SIXTH BOOK-->
 <tr>
-<!--FOUR-->
-		<td>
-			<div align="center" name="center" style="font-family: 'Calibri'">
-<!-- BOOK IMAGES -->
-				<img align="center" height="150" width="100" src="https://pictures.abebooks.com/08WOOSNAM48/22670931722.jpg">
-			
+	<td>
+	<div align="center" name="center" style="font-family: 'Calibri'">
+
+				<img target="_blank" align="center" height="150" width="100" src="Matilda.jpg">	
+		
 				<br>
 				
 				<p style="font-size:10px;">
-			https://pictures.abebooks.com/08WOOSNAM48/22670931722.jpg
+			https://images-na.ssl-images-amazon.com/images/I/51zEIXVobbL._SX323_BO1,204,203,200_.jpg
 			</p>
-		
-		</td>
-		
-		
-
-			
-			
-			
+	</td>
 
 <!--DESCRIPTIONS-->
-
 		<td>
+			<!--SIXTH BOOK-->
 			<div name="leftpadding" style="padding-left: 4px; font-family: 'Calibri'">
-				<h3 align="left">Harry Potter and the Goblet of Fire<br>
-				J. K. Rowling</h3>
+				<h3 align="left">Matilda<br>
+				Roald Dahl</h3>
 				
 				<p align="left" syle="font-size: 5px;">
-				Harry Potter and the Goblet of Fire is a fantasy book written by British author J. K. Rowling and the fourth novel in the Harry Potter series. It follows Harry Potter, a wizard in his fourth year at Hogwarts School of Witchcraft and Wizardry and the mystery surrounding the entry of Harry's name into the Triwizard Tournament, in which he is forced to compete.
+				Matilda is a sweet, exceptional young girl, but her parents think she's just a nuisance. She expects school to be different but there she has to face Miss Trunchbull, a kid-hating terror of a headmistress.
 				<br>
 				
 				<div style="font-size:10px; padding-bottom:10px;">
-				<a href="https://en.wikipedia.org/wiki/Harry_Potter_and_the_Goblet_of_Fire">https://en.wikipedia.org/wiki/Harry_Potter_and_the_Goblet_of_Fire</a>
-				
-				
+				<a href="https://www.roalddahl.com/roald-dahl/stories/k-o/matilda">https://www.roalddahl.com/roald-dahl/stories/k-o/matilda</a>
+					
 				</div>
 					
 		</div>
 		</td>
 		
-<!--FIVE-->		
 <!--LINKS-->
 		<td>
-		
 			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/Harry_Potter_and_the_Goblet_of_Fire">https://en.wikipedia.org/wiki/Harry_Potter_and_the_Goblet_of_Fire</a></li>
-			</ul>
-			
-			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/J._K._Rowling">https://en.wikipedia.org/wiki/J._K._Rowling</a></li>
-			</ul>
-		
+				<li style="font-family: 'Calibri'; color:blue;">https://www.goodreads.com/book/show/39988.Matilda</li>
+				
+				<li style="font-family: 'Calibri'; color:blue;">https://en.wikipedia.org/wiki/Matilda_(novel)</li>
+			</ul>	
 		</td>
-
 </tr>
 
+<!-- SEVENTH BOOK-->
 <tr>
-		<td>
-			<div align="center" name="center" style="font-family: 'Calibri'">
-<!-- BOOK IMAGES -->
-				<img align="center" height="150" width="100" src="https://www.capstonepub.com/assets/1/14/DimRegular/9781496564092.jpg">
-			
+	<td>
+	<div align="center" name="center" style="font-family: 'Calibri'">
+
+				<img target="_blank" align="center" height="150" width="100" src="PeterRabbit.jpg">	
+		
 				<br>
 				
 				<p style="font-size:10px;">
-			https://www.capstonepub.com/assets/1/14/DimRegular/9781496564092.jpg
+			https://images-na.ssl-images-amazon.com/images/I/A1KzHvAir%2BL.jpg
 			</p>
-		
-		</td>
-		
-		
-
-			
-			
-			
+	</td>
 
 <!--DESCRIPTIONS-->
-
 		<td>
+			<!--SEVENTH BOOK-->
 			<div name="leftpadding" style="padding-left: 4px; font-family: 'Calibri'">
-				<h3 align="left">The Picture of Dorian Gray<br>
-				Oscar Wilde</h3>
+				<h3 align="left">The Tale of Peter Rabbit<br>
+				Beatrix Potter</h3>
 				
 				<p align="left" syle="font-size: 5px;">
-				Dorian Gray is the subject of a full-length portrait in oil by Basil Hallward, an artist impressed and infatuated by Dorian's beauty; he believes that Dorian's beauty is responsible for the new mood in his art as a painter. Through Basil, Dorian meets Lord Henry Wotton, and he soon is enthralled by the aristocrat's hedonistic world view: that beauty and sensual fulfilment are the only things worth pursuing in life.
-
-Newly understanding that his beauty will fade, Dorian expresses the desire to sell his soul, to ensure that the picture, rather than he, will age and fade. The wish is granted, and Dorian pursues a libertine life of varied amoral experiences while staying young and beautiful; all the while, his portrait ages and records every sin.[
+				The Tale of Peter Rabbit is the original classic by Beatrix Potter. The Tale of Peter Rabbit was first published by Frederick Warne in 1902 and endures as Beatrix Potter's most popular and well-loved tale. It tells the story of a very mischievous rabbit and the trouble he encounters in Mr McGregor's vegetable garden!
 				<br>
 				
 				<div style="font-size:10px; padding-bottom:10px;">
-				<a href="https://en.wikipedia.org/wiki/The_Picture_of_Dorian_Gray">https://en.wikipedia.org/wiki/The_Picture_of_Dorian_Gray</a>
-				
-				
+				<a href="https://americanliterature.com/author/beatrix-potter/short-story/the-tale-of-peter-rabbit">https://americanliterature.com/author/beatrix-potter/short-story/the-tale-of-peter-rabbit</a>
+					
 				</div>
 					
 		</div>
 		</td>
 		
-		
 <!--LINKS-->
 		<td>
-		
 			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/The_Picture_of_Dorian_Gray">https://www.sparknotes.com/lit/the-perks-of-being-a-wallflower/summary/</a></li>
-			</ul>
-			
-			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/Oscar_Wilde">https://www.sparknotes.com/lit/the-perks-of-being-a-wallflower/summary/</a></li>
-			</ul>
-		
+				<li style="font-family: 'Calibri'; color:blue;">https://www.goodreads.com/book/show/19321.The_Tale_of_Peter_Rabbit</li>
+				
+				<li style="font-family: 'Calibri'; color:blue;">https://en.wikipedia.org/wiki/The_Tale_of_Peter_Rabbit</li>		
+			</ul>	
 		</td>
-
 </tr>
 
-
-<!--SIX-->
+<!-- EIGHTH BOOK-->
 <tr>
-		<td>
-			<div align="center" name="center" style="font-family: 'Calibri'">
-<!-- BOOK IMAGES -->
-				<img align="center" height="150" width="100" src="https://images2.penguinrandomhouse.com/cover/9780143106272">
-			
+	<td>
+	<div align="center" name="center" style="font-family: 'Calibri'">
+
+				<img target="_blank" align="center" height="150" width="100" src="CharWeb.jpg">	
+		
 				<br>
 				
 				<p style="font-size:10px;">
-			https://images2.penguinrandomhouse.com/cover/9780143106272
+			https://artsednow.org/wp-content/uploads/2018/11/CharlottesWeb.jpg
 			</p>
-		
-		</td>
-		
-		
-
-			
-			
-			
+	</td>
 
 <!--DESCRIPTIONS-->
-
 		<td>
+			<!--EIGHT BOOK-->
 			<div name="leftpadding" style="padding-left: 4px; font-family: 'Calibri'">
-				<h3 align="left">Great Expectations<br>
-				Charles Dickens</h3>
+				<h3 align="left">Charlotte's Web<br>
+				E. B. White</h3>
 				
 				<p align="left" syle="font-size: 5px;">
-				Great Expectations Summary
-Great Expectations is the story of Pip, an orphan boy adopted by a blacksmith's family, who has good luck and great expectations, and then loses both his luck and his expectations. Through this rise and fall, however, Pip learns how to find happiness. He learns the meaning of friendship and the meaning of love and, of course, becomes a better person for it.
+				E. B. White's Newbery Honor Book is a tender novel of friendship, love, life, and death that will continue to be enjoyed by generations to come. It contains illustrations by Garth Williams, the acclaimed illustrator of E. B. White's Stuart Little and Laura Ingalls Wilder's Little House series, among many other books.
 				<br>
 				
 				<div style="font-size:10px; padding-bottom:10px;">
-				<a href="https://www.gradesaver.com/great-expectations/study-guide/summary">https://www.gradesaver.com/great-expectations/study-guide/summary</a>
-				
-				
+				<a href="https://www.scholastic.com/charlottesweb/author.htm">https://www.scholastic.com/charlottesweb/author.htm</a>
+					
 				</div>
 					
 		</div>
 		</td>
 		
-		
 <!--LINKS-->
 		<td>
-		
 			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/Great_Expectations">https://en.wikipedia.org/wiki/Great_Expectations</a></li>
-			</ul>
-			
-			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/Charles_Dickens">https://en.wikipedia.org/wiki/Charles_Dickens</a></li>
-			</ul>
-		
+				<li style="font-family: 'Calibri'; color:blue;">https://www.goodreads.com/book/show/24178.Charlotte_s_Web</li>
+				
+				<li style="font-family: 'Calibri'; color:blue;">https://en.wikipedia.org/wiki/Charlotte%27s_Web</li>		
+			</ul>	
 		</td>
-
 </tr>
 
+<!-- NINTH BOOK-->
 <tr>
-		<td>
-			<div align="center" name="center" style="font-family: 'Calibri'">
+	<td>
+	<div align="center" name="center" style="font-family: 'Calibri'">
 
-<!--SEVEN-->
-			
-			<!-- BOOK IMAGES -->
-				<img align="center" height="150" width="100" src="https://i.pinimg.com/originals/16/40/43/164043b82f74957a2bb4d0d422ce54e7.jpg">
-			
+				<img target="_blank" align="center" height="150" width="100" src="Wrinkle.jpg">	
+		
 				<br>
 				
 				<p style="font-size:10px;">
-			https://i.pinimg.com/originals/16/40/43/164043b82f74957a2bb4d0d422ce54e7.jpg
+			https://images-na.ssl-images-amazon.com/images/I/510-sv2qzFL._SX320_BO1,204,203,200_.jpg
 			</p>
-		
-		</td>
-		
-		
-
-			
-			
-			
+	</td>
 
 <!--DESCRIPTIONS-->
-
 		<td>
+			<!--NINTH BOOK-->
 			<div name="leftpadding" style="padding-left: 4px; font-family: 'Calibri'">
-				<h3 align="left">Crime and Punishment<br>
-					Fyodor Dostoevsky</h3>
+				<h3 align="left">A Wrinkle in Time<br>
+				Madeleine L'Engle</h3>
 				
 				<p align="left" syle="font-size: 5px;">
-				Crime and Punishment focuses on the mental anguish and moral dilemmas of Rodion Raskolnikov, an impoverished ex-student in Saint Petersburg who formulates a plan to kill an unscrupulous pawnbroker for her money. Before the killing, Raskolnikov believes that with the money he could liberate himself from poverty and go on to perform great deeds. However, once it is done he finds himself racked with confusion, paranoia, and disgust for what he has done. His ethical justifications disintegrate completely as he struggles with guilt and horror and confronts the real-world moral consequences of his deed.
+				It was a dark and stormy night; Meg Murry, her small brother Charles Wallace, and her mother had come down to the kitchen for a midnight snack when they were upset by the arrival of a most disturbing stranger.
 				<br>
 				
 				<div style="font-size:10px; padding-bottom:10px;">
-				<a href="https://en.wikipedia.org/wiki/Crime_and_Punishment">https://en.wikipedia.org/wiki/Crime_and_Punishment</a>
-				
-				
+				<a href="https://time.com/wrinkle-in-time/">https://time.com/wrinkle-in-time/</a>
+					
 				</div>
 					
 		</div>
 		</td>
 		
-		
 <!--LINKS-->
 		<td>
-		
 			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/Crime_and_Punishment">https://en.wikipedia.org/wiki/Crime_and_Punishment</a></li>
-			</ul>
-			
-			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/Fyodor_Dostoevsky">https://en.wikipedia.org/wiki/Fyodor_Dostoevsky</a></li>
-			</ul>
-		
+				<li style="font-family: 'Calibri'; color:blue;">https://www.goodreads.com/book/show/33574273-a-wrinkle-in-time</li>
+				
+				<li style="font-family: 'Calibri'; color:blue;">https://en.wikipedia.org/wiki/A_Wrinkle_in_Time</li>		
+			</ul>	
 		</td>
-
 </tr>
 
+<!-- TENTH BOOK-->
 <tr>
-		<td>
-			<div align="center" name="center" style="font-family: 'Calibri'">
+	<td>
+	<div align="center" name="center" style="font-family: 'Calibri'">
 
-
-			
-			
-<!--EIGHT-->
-			<!-- BOOK IMAGES -->
-				<img align="center" height="150" width="100" src="https://images-na.ssl-images-amazon.com/images/I/61lhEaje-8L.jpg">
-			
+				<img target="_blank" align="center" height="150" width="100" src="Holes.jpg">	
+		
 				<br>
 				
 				<p style="font-size:10px;">
-			https://images-na.ssl-images-amazon.com/images/I/61lhEaje-8L.jpg
+			https://www.scholastic.com/content5/media/products/03/9780440414803_mres.jpg
 			</p>
-		
-		</td>
-		
-		
-
-			
-			
-			
+	</td>
 
 <!--DESCRIPTIONS-->
-
 		<td>
+			<!--TENTH BOOK-->
 			<div name="leftpadding" style="padding-left: 4px; font-family: 'Calibri'">
-				<h3 align="left">Stargirl<br>
-				Jerry Spinelli</h3>
+				<h3 align="left">Holes<br>
+				Louis Sachar</h3>
 				
 				<p align="left" syle="font-size: 5px;">
-Stargirl, who up till now has been homeschooled, starts school at Mica High as a tenth grader, where Leo is starting his eleventh grade year. Stargirl's entrance to school is a Big Deal for all the students in this small Arizona town. She immediately starts a stir with her wacky outfits and even more wacky behavior.
+				Stanley Yelnats is under a curse. A curse that began with his no-good-dirty-rotten-pig-stealing-great-great-grandfather and has since followed generations of Yelnatses. Now Stanley has been unjustly sent to a boys' detention center, Camp Green Lake, where the boys build character by spending all day, every day digging holes exactly five feet wide and five feet deep. There is no lake at Camp Green Lake. But there are an awful lot of holes.
 				<br>
 				
 				<div style="font-size:10px; padding-bottom:10px;">
-				<a href="https://www.shmoop.com/stargirl/summary.html">https://www.shmoop.com/stargirl/summary.html</a>
-				
-				
+				<a href="http://thebestnotes.com/booknotes/holes/holes04.html">http://thebestnotes.com/booknotes/holes/holes04.html</a>
+					
 				</div>
 					
 		</div>
 		</td>
 		
-		
 <!--LINKS-->
 		<td>
-		
 			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/Stargirl_(novel)">https://en.wikipedia.org/wiki/Stargirl_(novel)</a></li>
-			</ul>
-			
-			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/Jerry_Spinelli">https://en.wikipedia.org/wiki/Jerry_Spinelli</a></li>
-			</ul>
-		
+				<li style="font-family: 'Calibri'; color:blue;">https://www.goodreads.com/book/show/38709.Holes</li>
+				
+				<li style="font-family: 'Calibri'; color:blue;">https://en.wikipedia.org/wiki/Holes_(novel)</li>		
+			</ul>	
 		</td>
-
-</tr>
-
-<tr>
-		<td>
-			<div align="center" name="center" style="font-family: 'Calibri'">
-
-<!--NINE-->			
-			<!-- BOOK IMAGES -->
-				<img align="center" height="150" width="100" src="https://pmcdeadline2.files.wordpress.com/2019/03/the-outsiders-movie-poster-theater-poster.jpg?w=628&h=383&crop=1">
-			
-				<br>
-				
-				<p style="font-size:10px;">
-			https://pmcdeadline2.files.wordpress.com/2019/03/the-outsiders-movie-poster-theater-poster.jpg?w=628&h=383&crop=1
-			</p>
-		
-		</td>
-		
-		
-
-			
-			
-			
-
-<!--DESCRIPTIONS-->
-
-		<td>
-			<div name="leftpadding" style="padding-left: 4px; font-family: 'Calibri'">
-				<h3 align="left">The Outsiders<br>
-				S. E. Hinton</h3>
-				
-				<p align="left" syle="font-size: 5px;">
-				The Outsiders is about two weeks in the life of a 14-year-old boy. The novel tells the story of Ponyboy Curtis and his struggles with right and wrong in a society in which he believes that he is an outsider.
-				<br>
-				
-				<div style="font-size:10px; padding-bottom:10px;">
-				<a href="https://www.cliffsnotes.com/literature/o/the-outsiders/book-summary">https://www.cliffsnotes.com/literature/o/the-outsiders/book-summary</a>
-				
-				
-				</div>
-					
-		</div>
-		</td>
-		
-		
-<!--LINKS-->
-		<td>
-		
-			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/The_Outsiders_(novel)">https://en.wikipedia.org/wiki/The_Outsiders_(novel)</a></li>
-			</ul>
-			
-			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/S._E._Hinton">https://en.wikipedia.org/wiki/S._E._Hinton</a></li>
-			</ul>
-		
-		</td>
-
-</tr>
-
-<tr>
-		<td>
-			<div align="center" name="center" style="font-family: 'Calibri'">
-
-<!--TEN-->
-			
-<!-- BOOK IMAGES -->
-				<img align="center" height="150" width="100" src="https://images-na.ssl-images-amazon.com/images/I/91DL15J9h2L.jpg">
-			
-				<br>
-				
-				<p style="font-size:10px;">
-			https://images-na.ssl-images-amazon.com/images/I/91DL15J9h2L.jpg
-			</p>
-		
-		</td>
-		
-		
-
-			
-			
-			
-
-<!--DESCRIPTIONS-->
-
-		<td>
-			<div name="leftpadding" style="padding-left: 4px; font-family: 'Calibri'">
-				<h3 align="left">Tex<br>
-				S. E. Hinton</h3>
-				
-				<p align="left" syle="font-size: 5px;">
-				Tex by S.E. Hinton is a novel that follows the protagonist for which the book is named. He lives with Mason, his seventeen-year-old brother. Their father is absent and their mother is deceased, so Mason sees to it that their needs are met.
-				<br>
-				
-				<div style="font-size:10px; padding-bottom:10px;">
-				<a href="http://www.supersummary.com/tex/summary/">http://www.supersummary.com/tex/summary/</a>
-				
-				
-				</div>
-					
-		</div>
-		</td>
-		
-		
-<!--LINKS-->
-		<td>
-		
-			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/Tex_(novel)">https://www.sparknotes.com/lit/the-perks-of-being-a-wallflower/summary/</a></li>
-			</ul>
-			
-			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/S._E._Hinton">https://www.sparknotes.com/lit/the-perks-of-being-a-wallflower/summary/</a></li>
-			</ul>
-		
-		</td>
-
 </tr>
 			
 	</table>
-	</div>
-	</div>
-
-
-
-        </div> 
-    </div>
+    
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript">
